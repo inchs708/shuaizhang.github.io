@@ -44,7 +44,7 @@
 <p><li> <b>First, we provide quantitative justification of generalization improvement by using unlabeled data.</b>. Specifically, we prove that the improved generalization is a linear function of 1/\sqrt{M}, where M is the number of unlabeled data. 
 </li></p>
   
-  <img src="research/ST2.PNG" width="500" height="200">
+  <img src="research/ST2.PNG" width="600" height="200">
   
 <p><li> <b>Second, we provide analytical justification for the hyperparameter selection in guarantee improved performance when using unlabeled data.</b>. Our analysis focuses on the impact of the weighted loss parameter, denoted as \lambda. Lowering the value of \lambda results in a decrease in performance, while increasing it too much can cause the algorithm to diverge. The optimal value of \lambda is approximately \sqrt{N}/(\sqrt{M}+\sqrt{N}), where M and N represent the number of unlabeled and labeled data, respectively. Alternatively, one can progressively raise \lambda until the point where the algorithm diverges.
 </li></p>
