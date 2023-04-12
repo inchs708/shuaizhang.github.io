@@ -29,16 +29,16 @@
 <p><b>Discription</b>: Given given partially observed data, we need to recover original data by filling in missing entries and removing outliers. This problem is common in various fields such as recommendation systems, computer vision, and signal processing. To illustrate, imagine a data matrix representing the renewable energy output of multiple solar arrays over time. The time-series data for each array may be affected by a few shared factors, like temperature, wind speed, and UV index. As there are more data points than factors, it suggests that the data matrix is low-rank. Being able to fill in missing data or predict future outputs is crucial for energy systems planning and control. However, existing algorithms require at least one observation in each column, making it unfeasible to apply them in practical scenarios where all data is lost or inaccessible, such as prediction tasks. To solve this issue, we utilize the Hankel matrix to capture the temporal correlation across the data. We propose non-convex algorithms by exploring the structured Hankel matrix, and the algorithms achieve <b> reduced sample complexity </b> and <b> less computational time </b> with <b> theoretical guarantees</b>. Our specific contributions include </p>
   <img src="research/MC1.PNG" width="550" height="200">
   
-<p><li> <b>First, we propose an on-convex approach with convergence analysis for data satisfying low-rank Hankel property, e.g., video processing, image super-resolution, medical image reconstruction, direction-of-arrival estimation, and linear dynamical systems.</b>  For a data matrix satisfying low-rank Hankel property with rank r, our algorithm converges to the ground truth with exponential decay, while existing convex approximation approaches only enjoy a sub-linear converge rate.
+<p><li> <b>First, we propose an on-convex approach with convergence analysis for data satisfying low-rank Hankel property</b>, e.g., video processing, image super-resolution, medical image reconstruction, direction-of-arrival estimation, and linear dynamical systems.  For a data matrix satisfying low-rank Hankel property with rank r, our algorithm converges to the ground truth with exponential decay, while existing convex approximation approaches only enjoy a sub-linear converge rate.
 </li></p>
   
 <img src="research/MC2.PNG" width="600" height="250">
   
 <p><li><b>Second, Our algorithm is capable of withstanding the loss of a constant fraction of columns, whereas traditional methods are unable to cope with even a single lost column. </b>  For a data matrix satisfying low-rank Hankel property with rank  r, our algorithm can tolerate up to 1/r fraction of column-wise lost or corruptions. 
-</li> <\p> 
+</li> </p> 
   
 <p><li><b>Third, Our algorithm requires less number of samples and less computational time to recover the ground truth. </b>  For a time-series matrix with n X n samples satisfying low-rank Hankel property,  we can save the sample complexity by a fraction of 1/n and the computational complexity by a fraction of  1/n per iteration compared with traditional appraoches.
-</li><\p>  
+</li></p>  
   
 
 <ol>
