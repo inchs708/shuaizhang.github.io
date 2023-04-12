@@ -63,10 +63,14 @@
   <p><li> <b>First, we provide the theoretical guarantees for using magnitude-based pruning in finding the "winning ticket". </b> Specifically, we proves that the neuron weights that learns class-irrevelant features, e.g., background/noise features, tend to have a small magnitude. Therefore, removing the neuron weights with small magnitude will not change the expressive power of the neural network in learning good features (class-relevant features).  
 </li></p>
   
-  <p><center> <img src="research/NT5.PNG" width="800" height=auto> </center></p>
+  <p><center> <img src="research/NT5.PNG" width="700" height=auto> </center></p>
   
   <p><li> <b>Second, we provide the theoretical explanations for a good pruning network in achieving improved test accuracy and accelerated convergence rate.</b> Specifically, our analysis demonstrates that training the "winning ticket" corresponds to a wider and steeper convergence zone, which significantly diminishes the generalization gap, resulting in improved test accuracy. Consequently, training on a "winning ticket" necessitates fewer samples to achieve a sound initialization and ensure convergence, resulting in quicker convergence rates and reduced generalization errors for the algorithm.
 </li></p>
+  
+  <p><center> <img src="research/NT2.PNG" width="500" height=auto> <img src="research/NT3.PNG" width="300" height=auto> </center></p>
+  
+   <p><li> <b>Numerical verification for the improved performance by using magnitude-based pruning approach.</b>
   
     <p><center> <img src="research/NT4.PNG" width="700" height=auto> </center></p>
   
