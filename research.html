@@ -25,6 +25,17 @@
 <div id="toptitle">
 <h1>Projects and Research highlights</h1>
 </div>
+  <h2> Neural network pruning</h2>
+  <li><p><b>Selected Publications</b>:</p>
+</li>
+</ul>
+<ol>
+ <li><p><b>Shuai Zhang</b>, Meng Wang, Pin-Yu Chen, Sijia Liu, Songtao Lu, Miao Liu. “<em>Joint Edge-Model Sparse Learning is Provably Efficient for Graph Neural Networks.</em>” In International Conference on Learning Representations (<b>ICLR</b>), 2023. [<a href="Pub/ICLR23.pdf">pdf</a>]</p>
+</li>
+  <li><p><b>Shuai Zhang</b>, Meng Wang, Sijia Liu, Pin-Yu Chen, and Jinjun Xiong. “<em>Why Lottery Ticket Wins? A Theoretical Perspective of Sample Complexity on Sparse Neural Networks.</em>” In Proc. of the Thirty-fifth Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2021. [<a href="Pub/NeurIPS21.pdf">pdf</a>]</p>
+</li>
+</ol>
+  
  <h2>Self-training via unlabeled data (semi-supervised learning)</h2>
 <p><b>Discription</b>: Self-training is a type of semi-supervised learning approaches that combines labeled and unlabeled data to improve the accuracy of a model. It is useful in situations where obtaining labeled data is expensive or time-consuming, but there is an abundance of unlabeled data available. In many real-world scenarios, labeled data can be scarce or difficult to obtain, e.g., medical images, and labeling large datasets can be expensive or time-consuming, e.g., labeling Imagenet took almost 4 years with 49,000 workers from 167 countries. Most importantly, by incorporating unlabeled data, self-training can improve the accuracy of a model beyond what is possible with purely labeled data. Despite the use of self-training and deep learning in various studies, there is currently a lack of theoretical understanding regarding their integration and performance. In addition, certain numerical experiments have indicated that the non-linear characteristics of neural networks could result in a decline in performance when utilizing self-training. To address the disparity between numerical results and theoretical comprehension of self-training, we present a convergence analysis of the self-training algorithm, along with theoretical guidelines for selecting hyperparameters to ensure improved generalization using unlabeled data.   Our specific contributions include </p>
  
@@ -45,8 +56,25 @@
   
   <p>  <img src="research/ST3.PNG" width="750" height="300"> </p>
   
-
+<li><p><b>Selected Publications</b>:</p>
+</li>
+</ul>
+<ol>
+ <li><p><b>Shuai Zhang</b>, Meng Wang, Sijia Liu, Pin-Yu Chen, and Jinjun Xiong. “<em>How unlabeled data improve generalization in self-training? A one-hidden-layer theoretical analysis</em>.” In Proc. of The Tenth International Conference on Learning Representations (<b>ICLR</b>), 2022. [<a href="Pub/ICLR22.pdf">pdf</a>]</p>
+</li>
+</ol>
   
+  <h2> Graph neural networks</h2>
+  <li><p><b>Selected Publications</b>:</p>
+</li>
+</ul>
+<ol>
+ <li><p><b>Shuai Zhang</b>, Meng Wang, Pin-Yu Chen, Sijia Liu, Songtao Lu, Miao Liu. “<em>Joint Edge-Model Sparse Learning is Provably Efficient for Graph Neural Networks.</em>” In International Conference on Learning Representations (<b>ICLR</b>), 2023. [<a href="Pub/ICLR23.pdf">pdf</a>]</p>
+</li>
+  <li><p><b>Shuai Zhang</b>, Meng Wang, Sijia Liu, Pin-Yu Chen, and Jinjun Xiong. “<em>Fast Learning of Graph Neural Networks with Guaranteed Generalizability: Onehidden-layer Case.</em>” In Proc. of 2020 International Conference on Machine Learning (<b>ICML</b>), pp. 11268-11277. PMLR, 2020. [<a href="Pub/ICML20.pdf">pdf</a>]</p>
+</li>
+</ol>
+
 <h2>Low-rank Hankel Matrix Completion</h2>
 <p><b>Discription</b>: Given given partially observed data, we need to recover original data by filling in missing entries and removing outliers. This problem is common in various fields such as recommendation systems, computer vision, and signal processing. To illustrate, imagine a data matrix representing the renewable energy output of multiple solar arrays over time. The time-series data for each array may be affected by a few shared factors, like temperature, wind speed, and UV index. As there are more data points than factors, it suggests that the data matrix is low-rank. Being able to fill in missing data or predict future outputs is crucial for energy systems planning and control. However, existing algorithms require at least one observation in each column, making it unfeasible to apply them in practical scenarios where all data is lost or inaccessible, such as prediction tasks. To solve this issue, we utilize the Hankel matrix to capture the temporal correlation across the data. We propose non-convex algorithms by exploring the structured Hankel matrix, and the algorithms achieve <b> reduced sample complexity </b> and <b> less computational time </b> with <b> theoretical guarantees</b>. Our specific contributions include </p>
   <img src="research/MC1.PNG" width="600" height="300">
@@ -65,10 +93,15 @@
 </li></p>  
  
 <img src="research/MC2.PNG" width="800" height="350"> 
-
-  
+<li><p><b>Selected Publications</b>:</p>
+</li>
+</ul>
 <ol>
-
+<li><p><b>Shuai Zhang</b>, Meng Wang, Sijia Liu, Pin-Yu Chen, and Jinjun Xiong. Shuai Zhang, and Meng Wang. “<em>Correction of corrupted columns through fast robust Hankel matrix completion.</em>” IEEE Transactions on Signal Processing (<b>TSP</b>), no. 10: 2580-2594. IEEE, 2019. [<a href="Pub/TSP2.pdf">pdf</a>]</p>
+</li>
+  
+<li><p><b>Shuai Zhang</b>, Yingshuai Hao, Meng Wang, and Joe H. Chow. “<em>Multichannel Hankel matrix completion through nonconvex optimization.</em>” IEEE Journal of Selected Topics in Signal Processing (<b>JSTSP</b>), no. 4: 617-632. IEEE, 2018. [<a href="Pub/TSP1.pdf">pdf</a>]</p>  
+</li>  
 </ol>
 
 </tr>
