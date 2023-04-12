@@ -68,22 +68,22 @@
  <h2>Self-training via unlabeled data (semi-supervised learning)</h2>
 <p><b>Discription</b>: Self-training is a type of semi-supervised learning approaches that combines labeled and unlabeled data to improve the accuracy of a model. It is useful in situations where obtaining labeled data is expensive or time-consuming, but there is an abundance of unlabeled data available. In many real-world scenarios, labeled data can be scarce or difficult to obtain, e.g., medical images, and labeling large datasets can be expensive or time-consuming, e.g., labeling ImageNet took almost 4 years with 49,000 workers from 167 countries. Most importantly, by incorporating unlabeled data, self-training can improve the accuracy of a model beyond what is possible with purely labeled data. Despite the use of self-training and deep learning in various studies, there is currently a lack of theoretical understanding regarding their integration and performance. In addition, certain numerical experiments have indicated that the non-linear characteristics of neural networks could result in a decline in performance when utilizing self-training. To address the disparity between numerical results and theoretical comprehension of self-training, we present a convergence analysis of the self-training algorithm, along with theoretical guidelines for selecting hyperparameters to ensure improved generalization using unlabeled data.   Our specific contributions include </p>
  
-  <img src="research/ST4.PNG" width="750" height="270"> 
+<center> <img src="research/ST4.PNG" width="750" height="270"> 
   
 <p><li> <b>First, we provide quantitative justification of generalization improvement by using unlabeled data.</b>. Specifically, we prove that the improved generalization is a linear function of 1/\sqrt{M}, where M is the number of unlabeled data. 
 </li></p>
   
-  <img src="research/ST2.PNG" width="600" height="200">
+<center>  <img src="research/ST2.PNG" width="600" height="200">
   
 <p><li> <b>Second, we provide analytical justification for the hyperparameter selection in guarantee improved performance when using unlabeled data.</b>. Our analysis focuses on the impact of the weighted loss parameter, denoted as \lambda. Lowering the value of \lambda results in a decrease in performance, while increasing it too much can cause the algorithm to diverge. The optimal value of \lambda is approximately \sqrt{N}/(\sqrt{M}+\sqrt{N}), where M and N represent the number of unlabeled and labeled data, respectively. Alternatively, one can progressively raise \lambda until the point where the algorithm diverges.
 </li></p>
-    <p>  <img src="research/st1.PNG" width="500" height="170"> </p>
+    <p> <center> <img src="research/st1.PNG" width="500" height="170"> </p>
   
 <p><li> <b>Third, we provide the convergence and sample complexity analysis for learning a proper model.</b> We quantify the impact of labeled and unlabeled data on the generalization of the learned model, and we show that the iterations converges to the desired model with a characterizable bound with sufficient large number of unlabeled data. 
 </li></p>  
 
   
-  <p>  <img src="research/ST3.PNG" width="750" height="300"> </p>
+  <p> <center> <img src="research/ST3.PNG" width="750" height="300"> </p>
   
 <p><li><b>Selected Publications</b>:</p>
 </li>
@@ -121,7 +121,7 @@
 <p><li><b>Third, Our algorithm requires less number of samples and less computational time to recover the ground truth. </b>  For a time-series matrix with dimension of n times n satisfying low-rank Hankel property,  we can save the sample complexity by a fraction of 1/n and the computational complexity by a fraction of  1/n per iteration compared with traditional appraoches.
 </li></p>  
  
-<img src="research/MC2.PNG" width="800" height="350"> 
+<center> <img src="research/MC2.PNG" width="800" height="350"> 
 <p><li><b>Selected Publications</b>:</p>
 </li>
 </ul>
