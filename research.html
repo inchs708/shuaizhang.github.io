@@ -106,9 +106,9 @@
 
 <h2>Low-rank Hankel Matrix Completion</h2>
 <p><b>Discription</b>: Given given partially observed data, we need to recover original data by filling in missing entries and removing outliers. This problem is common in various fields such as recommendation systems, computer vision, and signal processing. To illustrate, imagine a data matrix representing the renewable energy output of multiple solar arrays over time. The time-series data for each array may be affected by a few shared factors, like temperature, wind speed, and UV index. As there are more data points than factors, it suggests that the data matrix is low-rank. Being able to fill in missing data or predict future outputs is crucial for energy systems planning and control. However, existing algorithms require at least one observation in each column, making it unfeasible to apply them in practical scenarios where all data is lost or inaccessible, such as prediction tasks. To solve this issue, we utilize the Hankel matrix to capture the temporal correlation across the data. We propose non-convex algorithms by exploring the structured Hankel matrix, and the algorithms achieve <b> reduced sample complexity </b> and <b> less computational time </b> with <b> theoretical guarantees</b>. Our specific contributions include </p>
-  <img src="research/MC1.PNG" width="600" height="300">
+ <center> <img src="research/MC1.PNG" width="600" height="300">
   
-  <img src="research/MC4.PNG" width="800" height="300"> 
+ <center> <img src="research/MC4.PNG" width="600" height="225"> 
   
 <p><li> <b>First, we propose an on-convex approach with convergence analysis for data satisfying low-rank Hankel property</b>, e.g., video processing, image super-resolution, medical image reconstruction, direction-of-arrival estimation, and linear dynamical systems.  For a data matrix satisfying low-rank Hankel property with rank r, our algorithm converges to the ground truth with exponential decay, while existing convex approximation approaches only enjoy a sub-linear converge rate.
 </li></p>
