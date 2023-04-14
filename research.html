@@ -84,7 +84,7 @@
 </li>
 </ol>
   
- <h2>Self-training via unlabeled data (semi-supervised learning)</h2>
+ <h2>Self-training via unlabeled data (semi-supervised learning) <a href="research/ST.pdf">[slides]</a></h2>
 <p><b>Discription</b>: Self-training is a type of semi-supervised learning approaches that combines labeled and unlabeled data to improve the accuracy of a model. It is useful in situations where obtaining labeled data is expensive or time-consuming, but there is an abundance of unlabeled data available. In many real-world scenarios, labeled data can be scarce or difficult to obtain, e.g., medical images, and labeling large datasets can be expensive or time-consuming, e.g., labeling ImageNet took almost 4 years with 49,000 workers from 167 countries. Most importantly, by incorporating unlabeled data, self-training can improve the accuracy of a model beyond what is possible with purely labeled data. Despite the use of self-training and deep learning in various studies, there is currently a lack of theoretical understanding regarding their integration and performance. In addition, certain numerical experiments have indicated that the non-linear characteristics of neural networks could result in a decline in performance when utilizing self-training. To address the disparity between numerical results and theoretical comprehension of self-training, we present a convergence analysis of the self-training algorithm, along with theoretical guidelines for selecting hyperparameters to ensure improved generalization using unlabeled data.   Our specific contributions include </p>
  
 <center> <img src="research/ST4.PNG" width="750" height=auto> </center>
@@ -112,7 +112,7 @@
 </li>
 </ol>
   
-  <h2> Graph Neural Networks</h2>
+  <h2> Graph Neural Networks  <a href="research/GNN.pdf">[slides]</a></h2>
   <p><b>Discription</b>: Graph neural networks (GNNs) are a class of deep learning models that are designed for data learning with graph structured data. Examples of data that can be represented as graphs include social networks, biological networks, recommendation systems, communication networks, Internet of Things (IoTs) networks, and transporation networks. 
   <p><center> <img src="research/GNN1.PNG" width="600" height=auto></center></p>
 Compared with traditional neural networks, GNNs propagate information across the graph through a series of neural network layers. At each layer, each node aggregates information from its neighboring nodes and updates its own representation accordingly. The aggregation and update rules are learned by the model during training, allowing it to capture complex patterns and dependencies in the graph. GNNs have been shown to be effective in a wide range of applications, including node classification, link prediction, and graph classification. 
@@ -138,7 +138,7 @@ On the other hand, directly adopting GPUs on large graphs remains challenging be
 </li>
 </ol>
 
-<h2>Low-rank Hankel Matrix Completion</h2>
+<h2>Low-rank Hankel Matrix Completion <a href="research/MC.pdf">[slides]</a> </h2>
 <p><b>Discription</b>: Given given partially observed data, we need to recover original data by filling in missing entries and removing outliers. This problem is common in various fields such as recommendation systems, computer vision, and signal processing. To illustrate, imagine a data matrix representing the renewable energy output of multiple solar arrays over time. The time-series data for each array may be affected by a few shared factors, like temperature, wind speed, and UV index. As there are more data points than factors, it suggests that the data matrix is low-rank. Being able to fill in missing data or predict future outputs is crucial for energy systems planning and control. However, existing algorithms require at least one observation in each column, making it unfeasible to apply them in practical scenarios where all data is lost or inaccessible, such as prediction tasks. To solve this issue, we utilize the Hankel matrix to capture the temporal correlation across the data. We propose non-convex algorithms by exploring the structured Hankel matrix, and the algorithms achieve <b> reduced sample complexity </b> and <b> less computational time </b> with <b> theoretical guarantees</b>. Our specific contributions include </p>
  <p><center> <img src="research/MC1.PNG" width="600" height=auto></center></p>
   
