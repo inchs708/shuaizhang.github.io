@@ -70,7 +70,7 @@
   
   <p><center> <img src="research/NT2.PNG" width="530" height=auto> <img src="research/NT3.PNG" width="230" height=auto> </center></p>
   
-   <p><li> Numerical verification for the improved performance by using magnitude-based pruning.<\li> </p>
+   <p><li> Numerical verification for the improved performance by using magnitude-based pruning.</li> </p>
   
     <p><center> <img src="research/NT4.PNG" width="700" height=auto> </center></p>
   
@@ -113,13 +113,28 @@
 </ol>
   
   <h2> Graph neural networks</h2>
+  <p><b>Discription</b>: Graph neural networks (GNNs) are a class of deep learning models that are designed for data learning with graph structured data. Examples of data that can be represented as graphs include social networks, biological networks, recommendation systems, communication networks, Internet of Things (IoTs) networks, and transporation networks. 
+  <p><center> <img src="research/GNN1.PNG" width="600" height=auto></center></p>
+Compared with traditional neural networks, GNNs propagate information across the graph through a series of neural network layers. At each layer, each node aggregates information from its neighboring nodes and updates its own representation accordingly. The aggregation and update rules are learned by the model during training, allowing it to capture complex patterns and dependencies in the graph. GNNs have been shown to be effective in a wide range of applications, including node classification, link prediction, and graph classification. 
+
+However, Training and inference of graph neural networks (GNNs) suffer from high computational costs, which prevents GNNs from being scaled up to large-scale real-world graph applications.  
+On the one hand, the computational complexity for processing the entire graph grows as an exponential function as the size of the dataset. As a comparison, the computational complexity of a GNN is much higher than some popular convolutional neural networks (CNNs) with model sizes 100x larger than the GNN. 
+On the other hand, directly adopting GPUs on large graphs remains challenging because GPU memory capacity is limited and can be insufficient. As an example, modern graph benchmark datasets, e.g., OBGN-protein, can take up to 350 gigabytes (GBs) of memory, which requires multiple GPUs at an estimated cost of $400K.  </p>
+ <p><center> <img src="research/GNN2.PNG" width="600" height=auto></center></p>
+ 
+ <p><li> <b>First, my research focuses on the generalizability and convergence analysis of implementing graph neural networks in graph structured data learning.</b>. 
+</li></p>
+
+ <p><li> <b>Second, my research focuses on developing graph sparsification methods to reduce the computational cost and sample complexity in training graph neural networks with theoretical guarantees.</b>. 
+</li></p>
+
   <p><li><b>Selected Publications</b>:</p>
 </li>
 </ul>
 <ol>
  <li><p><b>Shuai Zhang</b>, Meng Wang, Pin-Yu Chen, Sijia Liu, Songtao Lu, Miao Liu. “<em>Joint Edge-Model Sparse Learning is Provably Efficient for Graph Neural Networks.</em>” In International Conference on Learning Representations (<b>ICLR</b>), 2023. [<a href="Pub/ICLR23.pdf">pdf</a>]</p>
 </li>
-  <li><p><b>Shuai Zhang</b>, Meng Wang, Sijia Liu, Pin-Yu Chen, and Jinjun Xiong. “<em>Fast Learning of Graph Neural Networks with Guaranteed Generalizability: Onehidden-layer Case.</em>” In Proc. of 2020 International Conference on Machine Learning (<b>ICML</b>), pp. 11268-11277. PMLR, 2020. [<a href="Pub/ICML20.pdf">pdf</a>]</p>
+  <li><p><b>Shuai Zhang</b>, Meng Wang, Sijia Liu, Pin-Yu Chen, and Jinjun Xiong. “<em>Fast Learning of Graph Neural Networks with Guaranteed Generalizability: One hidden-layer Case.</em>” In Proc. of 2020 International Conference on Machine Learning (<b>ICML</b>), pp. 11268-11277. PMLR, 2020. [<a href="Pub/ICML20.pdf">pdf</a>]</p>
 </li>
 </ol>
 
