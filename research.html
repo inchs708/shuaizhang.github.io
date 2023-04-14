@@ -57,13 +57,13 @@
   <h2> Neural network pruning <a href="research/SNN.pdf">[slides]</a> </h2>
 <b>Discription</b>:  Neural network pruning is a technique used to reduce the size of a neural network by removing unnecessary connections and neurons while maintaining or improving its performance. This technique can help to make the network more sparse, leading to several advantages such as decreased computational cost, memory usage, energy consumption, and carbon footprint. Furthermore, recent numerical findings have indicated that a well-pruned neural network can exhibit improved test accuracy and faster convergence rates. This type of pruned network is commonly referred to as "winning tickets" within the context of the lottery ticket hypothesis (LTH), and numerical evidence suggests that magnitude-based pruning is effective in finding such "winning tickets". However, LTH and its relevant paper cannot explain the benefits of training the "winning tickets" and why using magnitude-based pruning approach can find the "winning tickets". 
   
-   <p><center> <img src="research/NP1.png" width="600" height=auto> </center></p>
+   <p><center> <img src="research/NP1.png" width="750" height=auto> </center></p>
   
   
   <p><li> <b>First, we provide the theoretical guarantees for using magnitude-based pruning in finding the "winning ticket". </b> Specifically, we proves that the neuron weights that learns class-irrevelant features, e.g., background/noise features, tend to have a small magnitude. Therefore, removing the neuron weights with small magnitude will not change the expressive power of the neural network in learning good features (class-relevant features).  
 </li></p>
   
-  <p><center> <img src="research/NT5.PNG" width="700" height=auto> </center></p>
+  <p><center> <img src="research/NT5.PNG" width="750" height=auto> </center></p>
   
   <p><li> <b>Second, we provide the theoretical explanations for a good pruning network in achieving improved test accuracy and accelerated convergence rate.</b> Specifically, our analysis demonstrates that training the "winning ticket" corresponds to a wider and steeper convergence zone, which significantly diminishes the generalization gap, resulting in improved test accuracy. Consequently, training on a "winning ticket" necessitates fewer samples to achieve a sound initialization and ensure convergence, resulting in quicker convergence rates and reduced generalization errors for the algorithm.
 </li></p>
@@ -72,7 +72,7 @@
   
    <p><li> Numerical verification for the improved performance by using magnitude-based pruning.</li> </p>
   
-    <p><center> <img src="research/NT4.PNG" width="700" height=auto> </center></p>
+    <p><center> <img src="research/NT4.PNG" width="750" height=auto> </center></p>
   
   <p><li><b>Selected Publications</b>:</p>
 </li>
@@ -92,17 +92,17 @@
 <p><li> <b>First, we provide quantitative justification of generalization improvement by using unlabeled data.</b>. Specifically, we prove that the improved generalization is a linear function of 1/\sqrt{M}, where M is the number of unlabeled data. 
 </li></p>
   
-<center>  <img src="research/ST2.PNG" width="600" height=auto></center>
+<center>  <img src="research/ST2.PNG" width="750" height=auto></center>
   
 <p><li> <b>Second, we provide analytical justification for the hyperparameter selection in guarantee improved performance when using unlabeled data.</b>. Our analysis focuses on the impact of the weighted loss parameter, denoted as \lambda. Lowering the value of \lambda results in a decrease in performance, while increasing it too much can cause the algorithm to diverge. The optimal value of \lambda is approximately \sqrt{N}/(\sqrt{M}+\sqrt{N}), where M and N represent the number of unlabeled and labeled data, respectively. Alternatively, one can progressively raise \lambda until the point where the algorithm diverges.
 </li></p>
-    <p> <center> <img src="research/st1.PNG" width="500" height=auto></center> </p>
+    <p> <center> <img src="research/st1.PNG" width="600" height=auto></center> </p>
   
 <p><li> <b>Third, we provide the convergence and sample complexity analysis for learning a proper model.</b> We quantify the impact of labeled and unlabeled data on the generalization of the learned model, and we show that the iterations converges to the desired model with a characterizable bound with sufficient large number of unlabeled data. 
 </li></p>  
 
   
-  <p> <center> <img src="research/ST3.PNG" width="750" height=auto></center> </p>
+  <p> <center> <img src="research/ST3.PNG" width="800" height=auto></center> </p>
   
 <p><li><b>Selected Publications</b>:</p>
 </li>
@@ -114,7 +114,7 @@
   
   <h2> Graph Neural Networks  <a href="research/GNN.pdf">[slides]</a></h2>
   <p><b>Discription</b>: Graph neural networks (GNNs) are a class of deep learning models that are designed for data learning with graph structured data. Examples of data that can be represented as graphs include social networks, biological networks, recommendation systems, communication networks, Internet of Things (IoTs) networks, and transporation networks. 
-  <p><center> <img src="research/GNN1.PNG" width="600" height=auto></center></p>
+  <p><center> <img src="research/GNN1.PNG" width="750" height=auto></center></p>
 Compared with traditional neural networks, GNNs propagate information across the graph through a series of neural network layers. At each layer, each node aggregates information from its neighboring nodes and updates its own representation accordingly. The aggregation and update rules are learned by the model during training, allowing it to capture complex patterns and dependencies in the graph. GNNs have been shown to be effective in a wide range of applications, including node classification, link prediction, and graph classification. 
 
 However, Training and inference of graph neural networks (GNNs) suffer from high computational costs, which prevents GNNs from being scaled up to large-scale real-world graph applications.  
@@ -127,7 +127,7 @@ On the other hand, directly adopting GPUs on large graphs remains challenging be
 
  <p><li> <b>Second, my research focuses on developing graph sparsification methods to reduce the computational cost and sample complexity in training graph neural networks with theoretical guarantees</b>. For example, our proposed joint edge-model sparsification algorithm achieves a similar performance as training on the original data and model with a significant reducation at the computation cost (number near the data point denotes the required MACs).
 </li></p>
- <p><center> <img src="research/GNN3.PNG" width="600" height=auto></center></p>
+ <p><center> <img src="research/GNN3.PNG" width="750" height=auto></center></p>
   <p><li><b>Selected Publications</b>:</p>
 </li>
 </ul>
@@ -147,12 +147,12 @@ On the other hand, directly adopting GPUs on large graphs remains challenging be
 <p><li> <b>First, we propose a non-convex approach with convergence analysis for data satisfying low-rank Hankel property</b>, e.g., video processing, image super-resolution, medical image reconstruction, direction-of-arrival estimation, and linear dynamical systems.  For a data matrix satisfying low-rank Hankel property with rank r, our algorithm converges to the ground truth with exponential decay, while existing convex approximation approaches only enjoy a sub-linear converge rate.
 </li></p>
 
-<center> <img src="research/MC2.PNG" width="700" height=auto> </center>
+<center> <img src="research/MC2.PNG" width="750" height=auto> </center>
   
 <p><li><b>Second, Our algorithm is capable of withstanding the loss of a constant fraction of columns, whereas traditional methods are unable to cope with even a single lost column. </b>  For a data matrix satisfying low-rank Hankel property with rank  r, our algorithm can tolerate up to 1/r fraction of column-wise lost or corruptions. 
 </li> </p> 
   
-  <p><center> <img src="research/MC4.PNG" width="600" height=auto> </center></p>
+  <p><center> <img src="research/MC4.PNG" width="750" height=auto> </center></p>
 
 <p><li><b>Third, Our algorithm requires less number of samples and less computational time to recover the ground truth. </b>  For a time-series matrix with dimension of n times n satisfying low-rank Hankel property,  we can save the sample complexity by a fraction of 1/n and the computational complexity by a fraction of  1/n per iteration compared with traditional appraoches.
 </li></p>  
