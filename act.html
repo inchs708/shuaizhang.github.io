@@ -46,49 +46,98 @@
 
 <style> .photo-row { display: flex; gap: 16px; justify-content: center; align-items: flex-start; margin: 18px 0 28px 0; } .photo-row img { width: 32%; height: 220px; object-fit: cover; border-radius: 8px; } .photo-caption { text-align: center; font-size: 0.95em; line-height: 1.4; color: #555; margin-top: -12px; margin-bottom: 28px; } @media (max-width: 768px) { .photo-row { flex-direction: column; } .photo-row img { width: 100%; height: auto; } } </style>
 
-<h3>Selected Photos: NASA K–12 Keynote</h3>
+<style>
+  .research-showcase {
+    margin: 24px 0 40px 0;
+  }
 
-<div class="photo-row"> <img src="cv/nasa-k12.jpeg" alt="NASA K–12 keynote presentation photo 1"> <img src="cv/nasa-k122.jpeg" alt="NASA K–12 keynote presentation photo 2"> <img src="cv/nasa-k12-3.jpeg" alt="NASA K–12 keynote presentation photo 3"> </div>
+  .research-showcase p {
+    line-height: 1.6;
+  }
 
-<p class="photo-caption"> Keynote presentation on “Foundation Models and AI Agents” at the NASA K–12 AI, ML, Space Weather &amp; Cyberinfrastructure Conference 2026 @ NJIT. </p>
+  .showcase-image {
+    text-align: center;
+    margin: 18px 0 12px 0;
+  }
 
-<style> .demo-block { display: flex; gap: 24px; align-items: center; margin: 24px 0 36px 0; } .demo-video { flex: 1.2; text-align: center; } .demo-video video { width: 100%; max-width: 560px; border-radius: 8px; } .demo-text { flex: 1; } .demo-text h3 { margin-top: 0; } .demo-text p { line-height: 1.6; } .demo-text img { width: 100%; max-width: 360px; border-radius: 8px; margin-top: 10px; } @media (max-width: 768px) { .demo-block { flex-direction: column; align-items: stretch; } .demo-video video, .demo-text img { max-width: 100%; } } </style>
+  .showcase-image img {
+    width: 80%;
+    max-width: 760px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .showcase-caption {
+    max-width: 760px;
+    margin: 8px auto 0 auto;
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.45;
+    color: #555;
+  }
+
+  .demo-description {
+    margin: 28px 0 40px 0;
+  }
+
+  .demo-description p {
+    line-height: 1.6;
+  }
+
+  .demo-video {
+    text-align: center;
+    margin: 18px 0 12px 0;
+  }
+
+  .demo-video video {
+    width: 80%;
+    max-width: 760px;
+    height: auto;
+    border-radius: 8px;
+  }
+</style>
 
 <h2>Research and Outreach Demonstrations</h2>
 
-<p> This section showcases selected research demos developed by our group and used in outreach events to introduce students, educators, and broader audiences to modern AI technologies. Through visual examples, interactive demonstrations, and project showcases, these demos aim to make concepts such as remote sensing super-resolution, multimodal data fusion, reinforcement learning, and sequential decision-making more accessible and engaging. </p>
-
-
-  
-<div class="research-showcase"> <h3>HSI–MSI Fusion</h3>
-
-<style> .research-showcase { margin: 24px 0 40px 0; } .research-showcase p { line-height: 1.6; } .showcase-image { text-align: center; margin: 18px 0 12px 0; } .showcase-image img { width: 80%; max-width: 760px; height: auto; border-radius: 8px; } .showcase-caption { max-width: 760px; margin: 8px auto 0 auto; text-align: center; font-size: 0.95em; line-height: 1.45; color: #555; } </style>
-  
-<p> We are developing AI-based methods for hyperspectral–multispectral image fusion and spatial super-resolution. This project examines how learning-based techniques can improve the spatial resolution of remote sensing data while preserving key spectral and physical information. The following satellite image of the Mississippi Sound (October 7, 2024) shows where land meets the Gulf Coast, with dense forests and farmland gradually giving way to wetlands, marshes, and a muddy brown coastal strip along the water's edge. The reconstructed high-resolution image (right) reveals finer details, such as road networks, wetland patches, and coastal development, that are blurry and hard to distinguish in the low-resolution input. </p>
-
-<div class="showcase-image"> <img src="cv/hsi.png" alt="NASA HSI-MSI fusion and super-resolution showcase"> </div>
-
-<p class="showcase-caption"> Example visualization of HSI–MSI fusion for remote sensing super-resolution.  </p> </div>
-
-<div class="demo-two-column">
-
-<div class="demo-video"> <video controls> <source src="videos/demo1.mp4" type="video/mp4"> Your browser does not support the video tag. </video> </div>
-
-<div class="demo-description"> <h3>Outreach Demo: LLM-Assisted Optimization for AUV Data Collection</h3>
-
 <p>
-  This demo illustrates how large language models can assist in optimizing autonomous underwater vehicle trajectories for data collection tasks. 
-  The LLM analyzes system bottlenecks, adjusts control and reward parameters, and terminates the optimization process once the system reaches its control limitations.
+  This section showcases selected research demos developed by our group and used in outreach events to introduce students, educators, and broader audiences to modern AI technologies. Through visual examples, interactive demonstrations, and project showcases, these demos aim to make concepts such as remote sensing super-resolution, multimodal data fusion, reinforcement learning, and sequential decision-making more accessible and engaging.
 </p>
 
-<p>
-  The video shows how the trajectory evolves across multiple optimization iterations, including adjustments to yaw-tracking control and waypoint-following behavior. 
-  This demo was designed to make AI-based decision-making, control tuning, and autonomous-system optimization more intuitive for students and outreach audiences.
-</p>
+<div class="research-showcase">
+  <h3>HSI–MSI Fusion</h3>
 
+  <p>
+    We are developing AI-based methods for hyperspectral–multispectral image fusion and spatial super-resolution. This project examines how learning-based techniques can improve the spatial resolution of remote sensing data while preserving key spectral and physical information. The following satellite image of the Mississippi Sound, collected on October 7, 2024, shows where land meets the Gulf Coast, with dense forests and farmland gradually giving way to wetlands, marshes, and a muddy brown coastal strip along the water's edge. The reconstructed high-resolution image reveals finer details, such as road networks, wetland patches, and coastal development, that are blurry and hard to distinguish in the low-resolution input.
+  </p>
+
+  <div class="showcase-image">
+    <img src="cv/hsi.png" alt="NASA HSI-MSI fusion and super-resolution showcase">
+  </div>
+
+  <p class="showcase-caption">
+    Example visualization of HSI–MSI fusion for remote sensing super-resolution.
+  </p>
 </div>
 
+<div class="demo-description">
+  <h3>Outreach Demo: LLM-Assisted Optimization for AUV Data Collection</h3>
+
+  <p>
+    This demo illustrates how large language models can assist in optimizing autonomous underwater vehicle trajectories for data collection tasks. The LLM analyzes system bottlenecks, adjusts control and reward parameters, and terminates the optimization process once the system reaches its control limitations.
+  </p>
+
+  <p>
+    The video shows how the trajectory evolves across multiple optimization iterations, including adjustments to yaw-tracking control and waypoint-following behavior. This demo was designed to make AI-based decision-making, control tuning, and autonomous-system optimization more intuitive for students and outreach audiences.
+  </p>
+
+  <div class="demo-video">
+    <video controls>
+      <source src="cv/demo1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </div>
+
         
 </td>
 </tr>
