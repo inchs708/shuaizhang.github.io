@@ -151,7 +151,93 @@
 <p> This outreach demo helps students and educators understand how modern AI models can support planning, navigation, and sequential decision-making. By visualizing generated paths in a 3D environment, the demo makes abstract ideas in generative modeling and autonomous-system control more intuitive and accessible. </p>
 
 <div class="demo-video"> <video controls> <source src="cv/demo5.mp4" type="video/mp4"> Your browser does not support the video tag. </video> </div> </div>
-  
+
+<style>
+  .demo-description {
+    margin: 28px 0 40px 0;
+  }
+
+  .demo-description p {
+    line-height: 1.6;
+  }
+
+  .video-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 18px 0 32px 0;
+  }
+
+  .video-item {
+    width: 48%;
+    text-align: center;
+  }
+
+  .video-item video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .video-caption {
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #555;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .video-row {
+      flex-direction: column;
+    }
+
+    .video-item {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="demo-description">
+  <h3>Outreach Demo: Using LLMs to Improve Robotic Performance</h3>
+
+  <p>
+    This demo showcases how large language models can enhance the performance of autonomous robotic systems. 
+    The simulation video compares different LLM-based configurations, illustrating how language-guided reasoning can improve task execution, planning, and decision-making. 
+    The real-world robotic showcase further demonstrates how the proposed approach can be deployed in a physical environment.
+  </p>
+
+  <p>
+    By combining simulation and real-world experiments, this demo provides an accessible introduction to how LLMs can support robotic control, adaptive behavior, and intelligent task execution in complex environments.
+  </p>
+
+  <div class="video-row">
+    <div class="video-item">
+      <video controls>
+        <source src="cv/demo9.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="video-caption">
+        Simulation demo comparing LLM-based robotic control settings.
+      </p>
+    </div>
+
+```
+<div class="video-item">
+  <video controls>
+    <source src="videos/demo8.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p class="video-caption">
+    Real-world robotic showcase demonstrating LLM-enhanced task performance.
+  </p>
+</div>
+```
+
+  </div>
+</div>
+
         
 </td>
 </tr>
