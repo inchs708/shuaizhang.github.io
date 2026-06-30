@@ -1,6 +1,10 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
+	  width: 70%;
+  	max-width: 1400px;
+  	margin-left: auto;
+  	margin-right: auto;
 	border: none;
 	border-collapse: separate;
 	background: white;
